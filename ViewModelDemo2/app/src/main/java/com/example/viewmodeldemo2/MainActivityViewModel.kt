@@ -2,15 +2,19 @@ package com.example.viewmodeldemo2
 
 import androidx.lifecycle.ViewModel
 
-class MainActivityViewModel: ViewModel() {
-    private var result = 0
+class MainActivityViewModel(startingTotal: Int): ViewModel() {
+    private var total = 0
+
+    init {
+        total = startingTotal
+    }
 
     fun getResult(): Int {
-        return result
+        return total
     }
 
     fun sum(input: Int): Int {
-        result += input
-        return result
+        total += input
+        return total
     }
 }
