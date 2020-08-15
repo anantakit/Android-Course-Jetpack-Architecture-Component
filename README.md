@@ -44,3 +44,6 @@
   - เพิ่ม apply plugin: 'kotlin-kapt' เพิ่อให้เราสามารถใข้ anotation ใน Kotlin ได้
   - ใน editText ให้แก้ databinding expression จากปกติ @{viewModel.username] เป็น @={viewModel.username}
   - เพิ่ม @Bindable ให้กับตัวแปร livedata ที่ต้องการจะให้เป็น 2 wayDataBinding ในไฟล์ MainActivityViewModel.kt
+### 9.TwoWayDataBindingDemo2 (ใช้ ViewModelDemo2 เป็น starter project)
+##### challenge 
+  - ลด code observe data และ onclick listener ใน MainActivity.ky ใช้ความรู้จากการทำ twoway databinding
